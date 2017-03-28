@@ -1,0 +1,13 @@
+target/
+src/main/resources/static/out
+node_modules
+.mvn/wrapper
+mvnw
+mvnw.cmd
+npm
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
