@@ -25,7 +25,7 @@ public class Event {
     @Temporal(TemporalType.DATE)
     private Date dateTo;
 
-    @OneToMany(mappedBy = "event", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "event", cascade = CascadeType.MERGE, fetch = FetchType.LAZY, orphanRemoval = true)
     private List<Router> routers = new ArrayList<>();
 
     public Event() {
